@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Route, Routes } from 'react-router-dom';
 import Header from './components/header.js';
 import About from './components/about.js';
 import Resume from './components/resume.js';
