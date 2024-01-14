@@ -1,11 +1,13 @@
 import React from 'react';
-import { Document, Page } from 'react-pdf';
-import myPDF from '../public/Srivatsav Resume.pdf';
-
+// import { Document, Page } from 'react-pdf';
+// import { PDFViewer } from '@react-pdf/renderer';
+import Header from './header.js';
+// import MyDocument from '../static/Srivatsav Resume.pdf'
 
 const Resume = () => {
   return (
     <div className="container resume-section">
+      <div><Header/></div>
       <h1>Resume</h1>
       <section>
         <h2>Experience</h2>
@@ -28,9 +30,14 @@ const Resume = () => {
         <p>Graduated with Bachelor's in Computer Science Engineering from NIIT University,Rajasthan from 2018-2022</p>
         <p>Studied Board of Intermediate Education from FIITJEE,Hyderabad from 2016-2018</p>
       </section>
-      <Document file={myPDF}>
-      <Page pageNumber={1} />
-      </Document>
+      <div>
+        <a class="btn btn-link" href={process.env.PUBLIC_URL + '/Srivatsav Resume.pdf'} target='_blank' role="button">PDF</a>
+      </div>
+      {/* <div>
+      <PDFViewer>
+        <MyDocument />
+      </PDFViewer>
+      </div> */}
       {/* Additional sections as needed */}
     </div>
   );

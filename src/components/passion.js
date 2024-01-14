@@ -1,8 +1,10 @@
 import React from 'react';
+import Header from './header.js';
 
 const Passion = () => {
   return (
     <div className="container passion-section">
+      <div><Header/></div>
       <h1>My Passion for Video Editing</h1>
       <p>
         I've picked up this hobby before I got into college and have edited few videos. 
