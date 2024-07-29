@@ -6,7 +6,7 @@ import Resume from './components/resume.js';
 // import Portfolio from './components/portfolio.js';
 import Contact from './components/contact.js';
 // import Passion from './components/passion.js';
-import './App.css';
+import './app.css';
 
 function App() {
   return (
